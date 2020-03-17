@@ -1,5 +1,7 @@
 body{
-    background-color: #E73845;
+    background-image: url(media/bg_1.png);
+    background-position: center;
+    background-size: cover;
     color: #fff;
     font-family: Helvetica;
     min-height: 100%;
@@ -10,11 +12,28 @@ header{
     align-items: center;
     flex-direction: column;
 }
+.logo{
+    margin-top: 30px;
+}
+.logo_right{
+    margin-top: 20px;
+    width: 40%;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .circles{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 button{
     width: 120px;
@@ -49,7 +68,7 @@ margin: 5px;
 }
 
 text{
-    margin-right: 160px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,17 +82,32 @@ text{
 
 .event_box{
     margin: 0px 30px;
+    border-bottom: 2px solid #4A4A4A;
+    margin-bottom: 20px;
+}
+.interactive_box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .event{
     width: 100%;
 }
+.events{
+    margin-top: 80px;
+}
 .events_description{
     margin: 0px 0px 5px 0px;
+    width: 70%;
+    text-align: center;
 }
 .right{
     display: flex;
     justify-content: flex-end;
     margin-top: 0px;
+    margin-bottom: 5px;
 }
 .footer_2{
     display: flex;
@@ -83,7 +117,7 @@ text{
 }
 #footer_margin{
     position: absolute;
-    margin-bottom: -160px;
+    margin-bottom: -80px;
 }
 .scanner-cam {
   border: 10px solid #fff;
@@ -102,8 +136,20 @@ text{
 }
 #preview{
     border: 10px solid #fff;
-    border-radius: 50px;
     width: 70%;
     height: 100%;
     margin: 20px 0px 30px 0px;
+    border-radius: 30px;
+}
+.welcome{
+    color: #000;
+}
+.white_box{
+    background-color: #fff;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }

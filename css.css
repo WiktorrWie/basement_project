@@ -99,9 +99,19 @@ text{
     margin-top: 80px;
 }
 .events_description{
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 5px 15%;
     width: 70%;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.wheel_description{
+    text-align: center;
+    font-size: 18pt;
+}
+.wheel_box{
+    margin: 0px 20px;
 }
 .right{
     display: flex;
@@ -152,4 +162,37 @@ text{
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.center{
+    text-align: center;
+}
+ #chart{
+        position:absolute;
+        width:300px;
+        height:300px;
+        top:100px;
+        left:50%;
+     margin-left: -150px;
+    }
+    #question{
+        position: absolute;
+        width:200px;
+        height:3<00px;
+        top:0;
+        left:320px;
+    }
+    #question h1{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+path{
+    position: absolute;
+    right: 50px;
 }

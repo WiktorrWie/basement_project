@@ -33,9 +33,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 60px;
 }
-button{
+.button{
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -82,8 +82,10 @@ text{
 
 .event_box{
     margin: 0px 30px;
-    border-bottom: 2px solid #4A4A4A;
     margin-bottom: 20px;
+}
+.border_bottom{
+    border-bottom: 2px solid #4A4A4A;
 }
 .interactive_box{
     text-align: center;
@@ -91,20 +93,20 @@ text{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 .event{
     width: 100%;
+    border-radius: 40px;
 }
 .events{
-    margin-top: 80px;
+    text-align: center;
 }
 .events_description{
-    margin: 0px 0px 5px 15%;
     width: 70%;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     display: flex;
-    text-align: center;
 }
 .wheel_description{
     text-align: center;
@@ -124,10 +126,15 @@ text{
     justify-content: space-around;
     align-items: center;
     height: 60px;
+    z-index: 2;
 }
 #footer_margin{
     position: absolute;
-    margin-bottom: -80px;
+    margin-bottom: -180px;
+}
+#footer_margin_2{
+    position: absolute;
+    margin-bottom: -220px;
 }
 .scanner-cam {
   border: 10px solid #fff;
@@ -168,18 +175,18 @@ text{
 }
  #chart{
         position:absolute;
-        width:300px;
-        height:300px;
-        top:100px;
-        left:50%;
+        width: 300px;
+        height: 300px;
+        top: 300px;
+        left: 55%;
      margin-left: -150px;
     }
     #question{
         position: absolute;
-        width:200px;
-        height:3<00px;
-        top:0;
-        left:320px;
+        width: 300px;
+        height: 300px;
+        top: 500px;
+        left: 35px;
     }
     #question h1{
         font-size: 40px;
@@ -188,11 +195,44 @@ text{
         position: absolute;
         padding: 0;
         margin: 0;
-        top:50%;
+        top: 170px;
         -webkit-transform:translate(0,-50%);
                 transform:translate(0,-50%);
+        text-align: center;
     }
 path{
-    position: absolute;
-    right: 50px;
+
+}
+circle{
+    border: 15px solid #000;
+}
+.interactive_text{
+    margin-top: 100px;
+}
+.interactive_description{
+    text-align: center;
+    font-size: 14pt;
+    margin: 20px 30px;
+}
+.margin{
+    margin: 0px 20px;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+}
+.answer{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0px;
+    text-align: left;
+    font-size: 12pt;
+}
+.bottom{
+    margin-bottom: 30px;
+}
+.size{
+    font-size: 14pt;
 }

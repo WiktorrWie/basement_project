@@ -40,11 +40,15 @@ main{
     height: 120px;
     border-radius: 100%;
     margin: 20px;
-    border: 3px solid #fff;
-    background-color: #4A4A4A;
-    color: #fff;
+    border: 3px solid #4A4A4A;
+    background-color: #fff;
+    color: #4A4A4A;
     font-family: sans-serif;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     width: 100%;
@@ -66,9 +70,11 @@ footer{
     width: 30px;
 margin: 5px;
 }
-
+#margin_top{
+       margin-top: 35px;
+}
 text{
-    margin-right: 100px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +126,10 @@ text{
     justify-content: flex-end;
     margin-top: 0px;
     margin-bottom: 5px;
+    color: #fff;
+}
+a{
+  text-decoration: none;
 }
 .footer_2{
     display: flex;
@@ -159,19 +169,31 @@ text{
     border-radius: 30px;
 }
 .welcome{
-    color: #000;
+    color: #4A4A4A;
+    margin-bottom: 5px;
+}
+.left{
+    color: #4A4A4A;
+    text-align: left;
+    font-size: 14pt;
+    margin: 15px;
 }
 .white_box{
     background-color: #fff;
     width: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    flex-direction: column;
 }
 .center{
     text-align: center;
+}
+#center{
+    margin-top: 11%;
 }
  #chart{
         position:absolute;
@@ -235,4 +257,195 @@ circle{
 }
 .size{
     font-size: 14pt;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -177px;
+  left: 70px;
+  padding: 20px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* alex code starts here */
+
+.event1_box {
+    text-align: center;
+}
+
+.event1_link {
+    color: white;
+}
+
+.event1_img {
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.white_bg {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.info_box {
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    transform: translateY(-600px);
+    z-index: -99;
+}
+
+.map {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 250px;
+    height: 300px;
+}
+
+.event_txt {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.event_desc {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    padding-bottom: 5px;
+}
+
+.calendar {
+    width: 6%;
+    height: auto;
+}
+
+.fb_event {
+    width: 10%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+.join {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* alex code starts here */
+
+.event1_box {
+    text-align: center;
+}
+
+.event1_link {
+    color: white;
+}
+
+.event1_img {
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.white_bg {
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.info_box {
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    transform: translateY(-600px);
+    z-index: -99;
+}
+
+.map {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 250px;
+    height: 300px;
+
+}
+
+.event_txt {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.event_desc {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    padding-bottom: 5px;
+}
+
+.calendar {
+    width: 6%;
+    height: auto;
+}
+
+.fb_event {
+    width: 10%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+.join {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    justify-content: center;
+    font-weight: bold;
 }
